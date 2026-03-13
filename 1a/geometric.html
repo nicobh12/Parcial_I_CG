@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas</title>
+    <link rel="stylesheet" href="geometric.css">
+</head>
+
+<body>
+    <main class="canvas-container">
+        <header class="header bg-navy"></header>
+
+        <section class="canvas-grid">
+            <!-- Fila 1: Cuadrado rojo | Patrón de rombos | Cuadrado menta -->
+            <div class="cell">
+                <div class="shape square size-full bg-red"></div>
+            </div>
+
+            <div class="cell">
+                <div class="shape rectangle-wide size-full bg-mint">
+                    <div class="shape diamond size-md bg-teal" style="align-self: flex-end; margin-bottom: 10%;">
+                        <div class="shape diamond size-sm bg-orange"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cell">
+                <div class="shape rectangle-wide size-full bg-mint"></div>
+            </div>
+
+            <!-- Fila 2: Cuadrados anidados | Círculo morado | Círculo naranja -->
+            <div class="cell">
+                <div class="shape square size-full border-yellow-thick">
+                    <div class="shape square size-lg bg-red inset-gap"></div>
+                </div>
+            </div>
+
+            <div class="cell">
+                <div class="shape circle size-full bg-purple"></div>
+            </div>
+
+            <div class="cell">
+                <div class="shape circle size-lg bg-orange"></div>
+            </div>
+
+            <!-- Fila 3: Franjas | Turquesa anidado | Verde anidado -->
+            <div class="cell stripes">
+                <div class="stripe stripe-tall bg-teal"></div>
+                <div class="stripe bg-red"></div>
+                <div class="stripe bg-orange"></div>
+                <div class="stripe bg-teal"></div>
+            </div>
+
+            <div class="cell">
+                <div class="shape rectangle-wide size-full border-teal-thick">
+                    <div class="shape rectangle-wide size-md bg-purple"></div>
+                </div>
+            </div>
+
+            <div class="cell">
+                <div class="shape square size-full border-mint-thick">
+                    <div class="shape square size-md bg-green"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body> 
+
+</html>

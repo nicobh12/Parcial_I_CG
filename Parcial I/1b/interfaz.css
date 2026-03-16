@@ -1,0 +1,101 @@
+body {
+    display: flex;   
+    height: 100vh;
+    align-items: center;
+    justify-content: center; 
+    background-color: #e1fffd; 
+    font-family: sans-serif;
+}
+
+#interfaz {
+    width: 650px;
+    height: 450px;
+    background-color: white;
+    display: flex;        
+    flex-direction: column;
+    overflow: hidden; 
+    box-shadow: 0px 4px 8px rgba(65, 65, 65, 0.2);
+}
+
+header {
+    background-color: rgb(35,35,35);
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.navOption {
+    width: 70px;
+    height: 18px;
+    background: white;
+}
+
+main {
+    display: flex;
+}
+
+.mainCards {
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    grid-template-rows: repeat(2, 160px);
+    gap: 16px;
+    padding: 20px;
+}
+
+.card {
+    background-color: rgb(225,225,225);
+}
+
+aside {
+    background-color: rgb(24, 24, 24);
+    width: 250px;
+    padding: 15px;
+    text-align: end;
+    height: 100%;
+}
+
+#asideDiv {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#yellowCircle {
+    margin-top: 8px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(211,189,23);
+}
+
+#asideRows{
+    margin-top: 24px;
+}
+
+mark {
+    display: inline-block;
+    color: transparent;   
+    line-height: 9px;     
+    margin: 4px 0;        
+    border-radius: 1px;    
+}
+
+.pinkMark { 
+    background-color: rgb(210,105,158);
+}
+.brownMark { 
+    background-color: rgb(113,64,21);
+}
+.yellowMark { 
+    background-color: rgb(205,191,38); 
+}
+.greenMark {
+    background-color: rgb(50,202,164); 
+}

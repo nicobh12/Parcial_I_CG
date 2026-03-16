@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body, html {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/*---------------------------------- LOGIN ----------------------------------*/
+
+#login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e293b;
+}
+
+.loginBox {
+    background: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3); 
+    width: 350px;
+    border-radius: 12px;
+}
+
+.loginBox h2 {
+    margin: 0;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.botonLogin {
+    background: #10b981;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.botonLogin:hover {
+    background: #059669;
+}
+
+/*---------------- SIDE BAR Y CONTENT -------------------*/
+
+#dashboard {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+aside {
+    width: 20%; 
+    background: #1e293b; 
+    color: white;
+    padding: 30px 20px;
+    box-sizing: border-box; 
+    border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+aside h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside a {
+    color: #cbd5e1;
+    text-decoration: none;
+    display: block;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+aside a:hover {
+    background: #334155;
+    color: white;
+}
+
+.botonSalir {
+    color: #fb7185;
+    font-weight: bold;
+    padding: 12px 15px;
+    border: 1px solid #fb7185;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.content {
+    width: 80%;
+    padding: 50px;
+    background-color: #f8fafc;
+    box-sizing: border-box;
+}
+
+.content h1 {
+    font-size: 28px;
+    color: #1e293b;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #1e293b;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/*------------------------------------------- INICIO (CARDS) ----------------------------------*/
+
+.cardsDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: left; 
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); 
+}
+
+#total{
+    border-top: 5px solid #15bbc7;
+}
+
+#ingresos{
+    border-top: 5px solid #4cd94c;
+}
+
+#gastos{
+    border-top: 5px solid #da3425;
+}
+
+.card h4 {
+    margin: 0;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.card p {
+    margin: 10px 0 0 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+/*-------------------------------------- TABLAS -----------------*/
+
+.simpleTable {
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 0;
+    margin-top: 20px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.simpleTable th { 
+    background: #f1f5f9; 
+    color: #475569;
+    font-weight: 600;
+    padding: 15px;
+    text-align: left;
+}
+
+.simpleTable td {
+    padding: 15px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+/*--------------------------------- REPORTE ----------------------------------------*/
+
+.reportBox {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    height: 250px;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.bar {
+    flex: 1; 
+    background: #3b82f6;
+    border-radius: 8px 8px 0 0; 
+    text-align: center;
+    color: white;
+    font-size: 11px;
+    padding-top: 10px;
+    min-width: 40px;
+}

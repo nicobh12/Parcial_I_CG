@@ -1,20 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login | Aurum</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <section id="login">
-        <form class="loginBox">
-            <h2>Finanzas Login</h2>
-            <input type="text" placeholder="Usuario">
-            <input type="password" placeholder="Contraseña">
-            <a href="inicio.html" class="botonLogin">Ingresar</a>
-        </form>
-    </section>
+    <main class="auth">
+        <section class="info" aria-label="Información de la aplicación">
+            <p class="tag">Plataforma Financiera</p>
+            <h1>Aurum</h1>
+            <p>Controla ingresos, gastos y reportes con un panel claro, moderno y diseñado para análisis rápido.</p>
+            <ul class="pros">
+                <li>Resumen diario de caja</li>
+                <li>Seguimiento mensual por categoría</li>
+                <li>Reportes visuales por periodos</li>
+            </ul>
+        </section>
+
+        <section class="box" aria-label="Formulario de inicio de sesión">
+            <h2>Iniciar sesión</h2>
+            <p class="intro">Ingresa tus credenciales para acceder al dashboard.</p>
+
+            <form action="inicio.html" method="get" class="form" autocomplete="off">
+                <label for="usuario">Usuario</label>
+                <input id="usuario" name="usuario" type="text" placeholder="ej: aframirez" autocomplete="off" required>
+
+                <label for="contrasena">Contraseña</label>
+                <input id="contrasena" name="contrasena" type="password" placeholder="Tu contraseña" autocomplete="current-password" required>
+
+                <button type="submit" class="btn primary">Ingresar al sistema</button>
+            </form>
+
+            <a href="#" class="link-help">¿Olvidaste tu contraseña?</a>
+            <p class="switch-text">¿Aún no tienes cuenta? <a href="registro.html" class="link-inline">Regístrate aquí</a></p>
+        </section>
+    </main>
 </body>
 </html>
 

@@ -1,32 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Inicio | Aurum</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <main id="dashboard">
-        <aside>
-            <h3>Menú</h3>
-            <nav>
+    <main class="app">
+        <aside class="menu">
+            <h2>Aurum</h2>
+            <p class="menu-text">Panel de control</p>
+            <nav aria-label="Navegación principal">
                 <ul>
-                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="inicio.html" class="active">Inicio</a></li>
                     <li><a href="ingresos.html">Ingresos</a></li>
                     <li><a href="gastos.html">Gastos</a></li>
                     <li><a href="reporte.html">Reportes</a></li>
                 </ul>
             </nav>
-            <a href="login.html" class="botonSalir">Cerrar Sesión</a>
+            <a href="login.html" class="btn salir">Cerrar sesión</a>
         </aside>
-        <section id="inicio" class="content">
-            <h1>Resumen General</h1>
-            <div class="cardsDiv">
-                <div id="total" class="card"><h4>Saldo Total</h4><p>$5.000</p></div>
-                <div id="ingresos" class="card"><h4>Ingresos Mes</h4><p>$2.500</p></div>
-                <div id="gastos" class="card"><h4>Gastos Mes</h4><p>$1.200</p></div>
-            </div>
+
+        <section class="main">
+            <header>
+                <h1>Resumen General</h1>
+                <p class="subtitle">Vista consolidada de tu estado financiero mensual.</p>
+            </header>
+
+            <section class="cards" aria-label="Tarjetas principales">
+                <article class="card total">
+                    <h3>Saldo total</h3>
+                    <p>$8.420.000</p>
+                    <span class="up">+8.1% vs mes anterior</span>
+                </article>
+                <article class="card income">
+                    <h3>Ingresos del mes</h3>
+                    <p>$5.110.000</p>
+                    <span class="up">+4.3% acumulado</span>
+                </article>
+                <article class="card expense">
+                    <h3>Gastos del mes</h3>
+                    <p>$2.760.000</p>
+                    <span class="down">+2.2% gasto operativo</span>
+                </article>
+            </section>
+
+            <section class="grid two">
+                <article class="panel">
+                    <h2>Flujo semanal</h2>
+                    <div class="bars" aria-label="Gráfico de barras de flujo semanal">
+                        <div class="bar"><span style="height: 55%;"></span><small>Lun</small></div>
+                        <div class="bar"><span style="height: 72%;"></span><small>Mar</small></div>
+                        <div class="bar"><span style="height: 48%;"></span><small>Mié</small></div>
+                        <div class="bar"><span style="height: 78%;"></span><small>Jue</small></div>
+                        <div class="bar"><span style="height: 66%;"></span><small>Vie</small></div>
+                    </div>
+                </article>
+
+                <article class="panel">
+                    <h2>Distribución de gasto</h2>
+                    <div class="ring" aria-hidden="true"></div>
+                    <ul class="legend">
+                        <li><span class="dot services"></span>Servicios: 35%</li>
+                        <li><span class="dot home"></span>Hogar: 28%</li>
+                        <li><span class="dot food"></span>Alimentación: 22%</li>
+                        <li><span class="dot other"></span>Otros: 15%</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="panel">
+                <h2>Movimientos recientes</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Movimiento</th>
+                            <th>Categoría</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>14/03/2026</td>
+                            <td>Pago de nómina</td>
+                            <td>Ingreso</td>
+                            <td class="plus">+$2.400.000</td>
+                        </tr>
+                        <tr>
+                            <td>13/03/2026</td>
+                            <td>Suscripciones software</td>
+                            <td>Gasto</td>
+                            <td class="minus">-$320.000</td>
+                        </tr>
+                        <tr>
+                            <td>11/03/2026</td>
+                            <td>Consultoría externa</td>
+                            <td>Ingreso</td>
+                            <td class="plus">+$850.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </section>
     </main>
 </body>

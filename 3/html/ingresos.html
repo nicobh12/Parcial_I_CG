@@ -1,32 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingresos</title>
+    <title>Ingresos | Aurum</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <main id="dashboard">
-        <aside>
-            <h3>Menú</h3>
-            <nav>
+    <main class="app">
+        <aside class="menu">
+            <h2>Aurum</h2>
+            <p class="menu-text">Panel de control</p>
+            <nav aria-label="Navegación principal">
                 <ul>
                     <li><a href="inicio.html">Inicio</a></li>
-                    <li><a href="ingresos.html">Ingresos</a></li>
+                    <li><a href="ingresos.html" class="active">Ingresos</a></li>
                     <li><a href="gastos.html">Gastos</a></li>
                     <li><a href="reporte.html">Reportes</a></li>
                 </ul>
             </nav>
-            <a href="login.html" class="botonSalir">Cerrar Sesión</a>
+            <a href="login.html" class="btn salir">Cerrar sesión</a>
         </aside>
-        <section id="ingresos" class="content">
-            <h1>Registro de Ingresos</h1>
-            <table class="simpleTable">
-                <tr><th>Fecha</th><th>Concepto</th><th>Monto</th></tr>
-                <tr><td>01/03</td><td>Salario</td><td>$2.000</td></tr>
-                <tr><td>05/03</td><td>Venta Freelance</td><td>$500</td></tr>
-            </table>
+
+        <section class="main">
+            <header>
+                <h1>Registro de Ingresos</h1>
+                <p class="subtitle">Seguimiento de entradas de dinero por fuente y periodicidad.</p>
+            </header>
+
+            <section class="grid two">
+                <article class="panel">
+                    <h2>Ingresos por semana</h2>
+                    <div class="bars" aria-label="Gráfico de ingresos semanales">
+                        <div class="bar"><span style="height: 42%;"></span><small>S1</small></div>
+                        <div class="bar"><span style="height: 67%;"></span><small>S2</small></div>
+                        <div class="bar"><span style="height: 74%;"></span><small>S3</small></div>
+                        <div class="bar"><span style="height: 81%;"></span><small>S4</small></div>
+                    </div>
+                </article>
+
+                <article class="panel">
+                    <h2>Fuentes principales</h2>
+                    <div class="ring sources" aria-hidden="true"></div>
+                    <ul class="legend">
+                        <li><span class="dot income"></span>Salario: $3.200.000</li>
+                        <li><span class="dot services"></span>Servicios: $1.150.000</li>
+                        <li><span class="dot other"></span>Otros: $760.000</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="panel">
+                <h2>Detalle de movimientos</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Fuente</th>
+                            <th>Descripción</th>
+                            <th>Monto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>02/03/2026</td>
+                            <td>Salario</td>
+                            <td>Pago mensual empresa</td>
+                            <td class="plus">+$3.200.000</td>
+                        </tr>
+                        <tr>
+                            <td>08/03/2026</td>
+                            <td>Servicios</td>
+                            <td>Diseño de presentación corporativa</td>
+                            <td class="plus">+$450.000</td>
+                        </tr>
+                        <tr>
+                            <td>15/03/2026</td>
+                            <td>Servicios</td>
+                            <td>Consultoría de optimización</td>
+                            <td class="plus">+$700.000</td>
+                        </tr>
+                        <tr>
+                            <td>16/03/2026</td>
+                            <td>Otros</td>
+                            <td>Intereses cuenta de ahorro</td>
+                            <td class="plus">+$120.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </section>
     </main>
 </body>

@@ -1,32 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gastos</title>
+    <title>Gastos | Aurum</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <main id="dashboard">
-        <aside>
-            <h3>Menú</h3>
-            <nav>
+    <main class="app">
+        <aside class="menu">
+            <h2>Aurum</h2>
+            <p class="menu-text">Panel de control</p>
+            <nav aria-label="Navegación principal">
                 <ul>
                     <li><a href="inicio.html">Inicio</a></li>
                     <li><a href="ingresos.html">Ingresos</a></li>
-                    <li><a href="gastos.html">Gastos</a></li>
+                    <li><a href="gastos.html" class="active">Gastos</a></li>
                     <li><a href="reporte.html">Reportes</a></li>
                 </ul>
             </nav>
-            <a href="login.html" class="botonSalir">Cerrar Sesión</a>
+            <a href="login.html" class="btn salir">Cerrar sesión</a>
         </aside>
-        <section id="gastos" class="content">
-            <h1>Registro de Gastos</h1>
-            <table class="simpleTable">
-                <tr><th>Fecha</th><th>Concepto</th><th>Monto</th></tr>
-                <tr><td>02/03</td><td>Arriendo</td><td>$800</td></tr>
-                <tr><td>04/03</td><td>Supermercado</td><td>$200</td></tr>
-            </table>
+
+        <section class="main">
+            <header>
+                <h1>Registro de Gastos</h1>
+                <p class="subtitle">Control detallado de egresos por tipo y comportamiento semanal.</p>
+            </header>
+
+            <section class="grid two">
+                <article class="panel">
+                    <h2>Tendencia semanal de gasto</h2>
+                    <div class="bars" aria-label="Gráfico de gastos semanales">
+                        <div class="bar danger"><span style="height: 64%;"></span><small>S1</small></div>
+                        <div class="bar danger"><span style="height: 52%;"></span><small>S2</small></div>
+                        <div class="bar danger"><span style="height: 69%;"></span><small>S3</small></div>
+                        <div class="bar danger"><span style="height: 58%;"></span><small>S4</small></div>
+                    </div>
+                </article>
+
+                <article class="panel">
+                    <h2>Categorías de gasto</h2>
+                    <div class="ring expense" aria-hidden="true"></div>
+                    <ul class="legend">
+                        <li><span class="dot home"></span>Hogar: 30%</li>
+                        <li><span class="dot food"></span>Alimentación: 25%</li>
+                        <li><span class="dot services"></span>Servicios: 20%</li>
+                        <li><span class="dot other"></span>Transporte y otros: 25%</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="panel">
+                <h2>Detalle de egresos</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Categoría</th>
+                            <th>Descripción</th>
+                            <th>Monto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>03/03/2026</td>
+                            <td>Hogar</td>
+                            <td>Arriendo mensual</td>
+                            <td class="minus">-$1.150.000</td>
+                        </tr>
+                        <tr>
+                            <td>06/03/2026</td>
+                            <td>Servicios</td>
+                            <td>Internet y telefonía</td>
+                            <td class="minus">-$260.000</td>
+                        </tr>
+                        <tr>
+                            <td>09/03/2026</td>
+                            <td>Alimentación</td>
+                            <td>Supermercado quincenal</td>
+                            <td class="minus">-$390.000</td>
+                        </tr>
+                        <tr>
+                            <td>13/03/2026</td>
+                            <td>Transporte</td>
+                            <td>Mantenimiento vehículo</td>
+                            <td class="minus">-$310.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </section>
     </main>
 </body>

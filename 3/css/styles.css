@@ -440,19 +440,3 @@ a {
     background: linear-gradient(180deg, #4f8bff 0%, #1d4ed8 100%);
 }
 
-@media (max-width: 1024px) {
-    .auth,
-    .auth.auth-register,
-    .app,
-    .cards,
-    .grid.two { grid-template-columns: 1fr; }
-
-    .auth { padding: 20px; }
-
-    .menu {
-        position: static;
-        height: auto;
-        overflow-y: visible;
-        gap: 12px;
-    }
-}

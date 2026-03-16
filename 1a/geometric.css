@@ -123,9 +123,3 @@ body {
 .stripe-tall {
   height: 36%;
 }
-
-/* Adaptativo: padding/separación ligeramente mayores en pantallas anchas */
-@media (min-width: 700px) {
-  body { padding: 32px; }
-  .canvas-grid { gap: 10px; }
-}
